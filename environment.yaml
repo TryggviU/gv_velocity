@@ -1,0 +1,29 @@
+name: gv_vel
+channels:
+  - defaults
+dependencies:
+  - geopandas
+  - cartopy
+  - xarray
+  - rioxarray
+  - geocube
+  - flox
+  - bottleneck
+  - dask
+  - netcdf4
+  - zarr
+  - s3fs
+  - jupyter
+  - itslive
+  - utm
+  - gdal
+  - statsmodels
+  - earthkit-data
+  - cdsapi
+  - ultraplot
+  - openpyxl
+  - matplotlib-scalebar
+  - contextily
+  - pip
+  - pip:
+    - ticoi
