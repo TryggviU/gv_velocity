@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Unnsteinsson"
+  given-names: "Tryggvi"
+  orcid: "https://orcid.org/0000-0001-7009-1954"
+- family-names: "Spagnolo"
+  given-names: "Matteo"
+  orcid: "https://orcid.org/0000-0002-2753-338X"
+- family-names: "Rea"
+  given-names: "Brice R."
+  orcid: "https://orcid.org/0000-0002-9928-145X"
+- family-names: "Girona"
+  given-names: "Társilo"
+  orcid: "https://orcid.org/0000-0001-6422-0422"
+- family-names: "Mullan"
+  given-names: "Donal"
+  orcid: "https://orcid.org/0000-0002-6363-3150"
+- family-names: "Barr"
+  given-names: "Iestyn"
+  orcid: "https://orcid.org/0000-0002-9066-8738"
+title: "Monitoring volcanic impacts on glacier flow"
+version: 1.0.0
+date-released: 2026-03-13
+url: "https://github.com/TryggviU/gv_velocity"
