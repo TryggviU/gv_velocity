@@ -23,4 +23,4 @@ The script includes all parameter sets discussed in the manuscript below with th
 
 Please cite the following if using the code:
 
-Unnsteinsson T, Spagnolo M, Rea BR, Girona T, Mullan D, and Barr I (2026). _Monitoring volcanic impacts on glacier flow_ [In press]. University of Aberdeen
+Unnsteinsson T, Spagnolo M, Rea BR, Girona T, Mullan D, and Barr I (2026). _Global monitoring of volcanic impacts on glacier flow_ [In press]. University of Aberdeen
