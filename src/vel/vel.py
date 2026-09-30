@@ -238,9 +238,6 @@ def ticoi_point_timeseries(
             df = pd.DataFrame()
 
     return df
-    # except (KeyError, zarr.errors.GroupNotFoundError) as e:
-    #     return pd.DataFrame()
-        # return ticoi_point_timeseries(point=point, **kwargs)
 
 
 def ticoi_load_points(
@@ -258,7 +255,9 @@ def ticoi_load_points(
     if download:
         for i, point in tqdm(
                 zip(indices, points), total=len(indices),
-                desc=f"Downloading TICOI for centreline {dirpath.split("\\")[-3]} on volcano {dirpath.split("\\")[-4]}"
+                desc="Downloading TICOI for centreline {} on volcano {}".format(
+                    dirpath.split('\\')[-3], dirpath.split('\\')[-4]
+                )
         ):
             df = ticoi_point_timeseries(point=point, **kwargs)
             if len(df) == 0:
@@ -269,7 +268,9 @@ def ticoi_load_points(
     else:
         for i, point in tqdm(
                 zip(indices, points), total=len(indices),
-                desc=f"Downloading TICOI for centreline {dirpath.split("\\")[-3]} on volcano {dirpath.split("\\")[-4]}"
+                desc="Downloading TICOI for centreline {} on volcano {}".format(
+                    dirpath.split("\\")[-3], dirpath.split("\\")[-4]
+                )
         ):
             if not os.path.exists(os.path.join(dirpath, f"{rgi_l_id}_{i:04}_ticoi.csv")):
                 df = ticoi_point_timeseries(point=point, **kwargs)
@@ -302,4 +303,3 @@ def ticoi_combine_timeseries(filepaths: list[str | os.PathLike], distance: list[
             dfv = pd.concat([dfv, df])
 
     return dfv.set_index(["distance", "date"])
-
