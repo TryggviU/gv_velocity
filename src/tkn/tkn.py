@@ -165,17 +165,6 @@ def plot_single(ds, d_era5, df_unrest, df_eruptions, filepath="", **kwargs):
     else:
         uplt.show()
 
-    # ds["v"].plot.imshow(ax=axs[0], x="distance", y="date", cmap="viridis", vmin=0, vmax=ds.v.quantile(0.95).values.item())
-    # ds["dv_mean"].plot.imshow(ax=axs[1], x="distance", y="date", cmap="RdBu_r", vmin=-1, vmax=1)
-    # ds["dv_mean_vec"].plot.imshow(ax=axs[2], x="distance", y="date", cmap="RdBu_r", vmin=-1, vmax=1)
-    # ds["dv_median"].plot.imshow(ax=axs[3], x="distance", y="date", cmap="RdBu_r", vmin=-1, vmax=1)
-    # ds["dv_seasonal"].plot.imshow(ax=axs[4], x="distance", y="date", cmap="RdBu_r", vmin=-1, vmax=1)
-    # ds["dv_seasonal_vec"].plot.imshow(ax=axs[5], x="distance", y="date", cmap="RdBu_r", vmin=-1, vmax=1)
-
-    # ds.resample(date="14D").mean()["v"].plot.imshow(ax=axs[3], x="distance", y="date", cmap="viridis", vmin=0, vmax=ds.v.quantile(0.95).values.item())
-
-    # uplt.show()
-
 
 def plot_itslive_ticoi(ds_i, ds_t, d_era5, df_unrest, df_eruptions, filepath="", **kwargs):
     vmax = max(ds_i.v.quantile(0.95).item(), ds_t.v.quantile(0.95).item())
